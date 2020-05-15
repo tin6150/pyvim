@@ -19,7 +19,7 @@ From: centos:8
 
 %runscript
 	#echo "vim from inside the container..."
-	/usr/bin/vim
+	/usr/bin/vim "$@"
 
 
 %post
