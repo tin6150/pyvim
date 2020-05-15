@@ -26,8 +26,8 @@ From: centos:8
 	#echo "Hello from inside the container"
 	touch /THIS_IS_INSIDE_SINGULARITY
 	#yum -ty update 
-	#yum -ty install vim bash zsh fish environment-modules
-	dnf install vim bash zsh fish environment-modules
+	#yum -ty install vim python2 zsh environment-modules
+	dnf --assumeyes --quiet install vim python2 zsh environment-modules
 
 	echo "end"                  >> /THIS_IS_INSIDE_SINGULARITY
 	date                        >> /THIS_IS_INSIDE_SINGULARITY
