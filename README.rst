@@ -19,4 +19,8 @@ check per vim --version
 
 
 
+Build
+-----
+
+sudo singularity build --sandbox ./pyvim.sif Singularity 2>&1 | tee singularity_build.log 
 
